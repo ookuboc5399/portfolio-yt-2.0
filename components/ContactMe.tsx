@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { PageInfo } from "../typings";
-
+import { useForm, SubmitHandler } from "react-hook-form";
 
 type Props = {
   pageInfo: PageInfo;

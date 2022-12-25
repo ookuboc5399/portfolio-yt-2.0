@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
-// import { urlFor } from "../sanity";
+import { urlFor } from "../sanity";
 import Link from "next/link";
 
 type Props = {
@@ -26,7 +26,7 @@ function Projects({ projects }: Props) {
             key={project._id}
             className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-20 md:p-44 h-screen"
           >
-            <Link key={project._id} href={project.linkToBuild}>
+            {/* <Link key={project._id} href={project.linkToBuild}>
               <motion.img
                 initial={{
                   y: -300,
@@ -34,10 +34,10 @@ function Projects({ projects }: Props) {
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                src={urlFor(project?.image).url()}
+                src="../public/107.jpg"
                 className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer"
               />
-            </Link>
+            </Link> */}
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
